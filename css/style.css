@@ -1,0 +1,351 @@
+@charset "UTF-8"
+html{
+	font-size: 62.5%;
+}
+/* --------------------------------
+ * base
+ * -------------------------------- */
+body{
+	font-size: 1.2rem;
+	text-align: center;
+	font-family: Raleway,"Hiragino Kaku Gothic ProN", Meiyro ,sans-serif;	
+}
+*,*::before,*::after{
+	box-sizing: border-box;
+}
+/* --------------------------------
+ * header
+ * -------------------------------- */
+ .heading{
+ 	width: 100%;
+
+ }
+ /* --------------------------------
+ * nav
+ * -------------------------------- */
+ .menunav{
+ 	width: 100%;
+ 	position: fixed;
+ 	top: 0;
+ 	left: 0;
+ 	background-color: #FFFFFF;
+ }
+ .menunav .nav-item{
+ 	display: inline-block;
+	margin: 0 20px;
+	font-size:0.8rem;
+	letter-spacing: 2px;
+	color: #000000;
+	position: relative;
+    z-index: 1;
+ }
+.menunav .nav-item a{
+	text-decoration: none;
+	color: #000000;
+}
+.menunav .nav-item a:hover{
+	color: #666666;
+}
+.menunav .nav-item a::after{
+	content: '';
+	display: block;
+	width: 0;
+	border-bottom: 1px solid #666666;
+	transition: width 0.3s ease-in-out;
+	margin: 6px auto 0;
+}
+.menunav .nav-item a:hover::after{
+	width: 100%;
+	cursor: pointer;
+}
+
+
+ .main-bg{
+ 	width: 100%;
+ 	margin-top: 60px;
+ }
+.main-bg p{
+	padding-top:35px; 
+	font-weight: bold;
+	font-size: 3rem;
+	letter-spacing: 3px;
+}
+ .main-bg img{
+ 	width: 100%;
+ 	height: 500px;
+ 	opacity: 0.7;
+ 	position: relative;
+ 	z-index: -1
+ }
+ /* --------------------------------
+ * News
+ * -------------------------------- */
+ .news{
+ 	width: 100%;
+ 	margin-top: 50px ;
+ 	letter-spacing: 2px;
+ }
+ .info-wrapper{
+ 	width: 100%;
+ 	
+ 	margin: 50px 0;
+ }
+ .info1{
+ 	width: 50%;
+ 	float: left;
+ }
+ .info-img img{
+ 	width: 90%;
+ 	height: 350px;
+ 	opacity: 0.8;
+ 	margin-bottom: 10px;
+ 	position: relative;
+ 	z-index: -1
+ }
+ 
+ .info2{
+ 	float: right;
+ 	width: 50%;
+ }
+ .info-text p{
+ 	text-align: left;
+ 	letter-spacing: 2px;
+ 	line-height: 2;
+ 	font-size: 1rem;
+ 	padding: 30px;
+ }
+ .clearfix{
+ 	content: '';
+ 	display: block;
+ 	clear: both;
+ }
+ /* --------------------------------
+ * Attractions
+ * -------------------------------- */
+ .tourism-bg{
+ 	background:url('../images/tourismbg.jpg') repeat;
+ 	background-size: cover;
+ 	position: relative;
+ 	z-index: -2;
+ 	width: 100%;
+ }
+ .tourism-wrapper{
+ 	
+ 	padding: 60px   0;
+ }
+ .tourism-img{
+ 	opacity: 0.8;
+ 	border-radius: 15px;
+ 	box-shadow: 0 0 15px #666666;
+ 	position: relative;
+ 	z-index: -1
+ }
+ .tourism-text{
+ 	width: 100%;
+ 	padding-bottom: 20px;
+ }
+ .tourism-text p{
+ 	text-align: center;
+ 	display: inline-block;
+ 	width: 24%;
+ 	font-size: 1rem;
+ 	color: #FFFFFF;
+ }
+ .tourism-wrapper img{
+ 	height: 225px;
+ 	width: 24%;
+ 	
+ }
+ /* --------------------------------
+ * Natural resources
+ * -------------------------------- */
+.natural-resources{
+	margin-top: 100px;
+ }
+.natural-wrapper{
+	width:90%;
+	margin: 50px;
+	
+}
+.natura2-wrapper{
+	width:90%;
+	margin: 50px;
+	height: 400px;
+}
+.natural-img{
+	width: 50%;
+	float: left;
+}
+.natura2-img{
+	width: 50%;
+	float: left;
+}
+.natural-wrapper img{
+	width: 80%;
+	height: auto;
+	border-radius: 15px;
+	opacity: 0.7;
+	border-bottom: solid  7px #000000;
+	position: relative;
+ 	z-index: -1
+}
+.natura2-wrapper img{
+	width: 80%;
+	height: auto;
+	border-radius: 15px;
+	opacity: 0.7;
+	border-bottom: solid  7px #000000;
+	position: relative;
+ 	z-index: -1
+}
+.natural-text{
+	width: 50%;
+	float: right;
+}
+.natura2-text{
+	width: 50%;
+	float: right;
+}
+.natural-text p{
+	text-align: left;
+	line-height: 1.2;
+	letter-spacing: 2px;
+	font-size: 1rem;
+	padding: 20px;
+}
+.natura2-text p{
+	text-align: left;
+	line-height: 1.2;
+	letter-spacing: 2px;
+	font-size: 1rem;
+	padding: 20px;
+}
+.clearfix{
+	content: '';
+	display: block;
+	clear: both;
+}
+/* --------------------------------
+ * Traffic
+ * -------------------------------- */
+.traffic-wrapper{
+	width: 100%;
+	background:url('../images/bg.jpg') ;
+	background-size: cover;
+	padding-top: 60px;
+	color: #FFFFFF;
+	box-shadow: 0 0 50px #000000;
+}
+.map iframe{
+	border-radius: 15px;
+	width: 70%;
+}
+.traffic-text{
+	text-align: left;
+	padding: 100px;
+}
+.traffic-text h4{
+	text-align: center;
+}
+#gotop {
+    cursor: pointer;
+}
+#gotop img{
+	 height: 30px;
+    width: 30px;
+    margin-top: 10PX;
+}
+.footer{
+	font-size: 1rem;
+}
+@media only screen and (max-width:768px){
+
+	.menunav .nav-item{
+		margin: 10px;
+		font-size: 0.6rem;
+	}
+	.main-bg p{
+		font-size: 2rem;
+	}
+	.main-bg img{
+		height: 300px;
+	}
+	.info1{
+		float: none;
+		width: 100%;
+	}
+	.info2{
+		float: none;
+		width: 100%;
+	}
+	 .info-text p{
+	 	font-size: 0.8rem;
+	}
+	 .tourism-wrapper img{
+	 	height: 100px;
+	 	width: 20%;
+	}
+	.tourism-text p{
+		width: 21%;
+		font-size: 0.7rem;
+	}
+	.natural-img{
+	    width: 100%;
+	    float: none;
+    }
+    .natura2-img{
+	    width: 100%;
+	    float: none;
+    }
+    .natural-text{
+	width: 100%;
+	float: none;
+	padding: 50px;
+    }
+    .natura2-text{
+	width: 100%;
+	float: none;
+	padding: 50px;
+    }
+    .natural-text p{
+    	font-size: 0.8rem;
+    	margin-right: 40px;
+    }
+    .natura2-text p{
+    	font-size: 0.8rem;
+    	margin-right: 40px;
+    }
+    .natural-wrapper {
+    	float: none;
+    }
+    .natural-wrapper img{
+    	margin-right: 40px;
+    }
+    .natura2-wrapper img{
+    	margin-right: 40px;
+    }
+    .natura2-wrapper{
+    	height: 480px;
+    	float: none;
+    }
+    .traffic-text{
+    	font-size: 0.8rem;
+    	padding: 20px;
+    }
+    .map iframe{
+    	height: 300px;
+    	width: 80%;
+    }
+    .footer{
+    	font-size: 0.6rem;
+    }
+
+	 
+	 
+
+}
+
+ 
+ 
+ 
+ 
